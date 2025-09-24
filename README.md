@@ -1,6 +1,6 @@
 ### `// whoami`
 
-Just another dev trying to make the compiler bend to my will. I mess with Rust, build systems, and CI stuff. Currently forging build systems at @aftershootco. Sometimes I poke at low-level things and compilers to see what breaks.
+Just another dev trying to make the compiler bend to my will. I mess with Rust, build systems, and CI stuff. Currently forging build systems at [@aftershootco](https://github.com/aftershootco). Sometimes I poke at low-level things and compilers to see what breaks.
 
 ---
 
