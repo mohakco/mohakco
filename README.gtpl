@@ -1,4 +1,4 @@
-
+<!-- Generated from README.gtpl by .github/workflows/markscribe.yml. Edit the template, not this file. -->
 
 ### Mohak Malhotra
 
@@ -28,12 +28,14 @@ and cross-platform toolchains.
 **Languages:** Rust, Go, C, Python, TypeScript, Bash, Nushell
 **Build & systems:** Cargo, vcpkg, Clang, CMake, Nix, Linux
 **Infrastructure:** GitHub Actions, GCP, Docker, Kubernetes, Proxmox, Tart, QEMU
-
+{{ with recentPullRequests 5 }}
+### Recent pull requests
+{{ range . }}
+- [{{ .Title }}]({{ .URL }}) on [{{ .Repo.Name }}]({{ .Repo.URL }})
+{{- end }}
+{{ end }}{{ with recentStars 5 }}
 ### Recently starred
-
-- [Kayleexx/sigil](https://github.com/Kayleexx/sigil) — sigil is a low level tool that runs a linux process in a private and restricted environment similar to docker
-- [ThePrimeagen/99](https://github.com/ThePrimeagen/99) — Neovim AI agent done right
-- [karpathy/autoresearch](https://github.com/karpathy/autoresearch) — AI agents running research on single-GPU nanochat training automatically
-- [ran-j/PS2Recomp](https://github.com/ran-j/PS2Recomp) — Playstation 2 Static Recompiler &amp; Runtime Tool to make native PC ports
-- [maxicarlos08/gphoto2-rs](https://github.com/maxicarlos08/gphoto2-rs) — Rust wrapper for gphoto2
-
+{{ range . }}
+- [{{ .Repo.Name }}]({{ .Repo.URL }}){{ with .Repo.Description }} — {{ . }}{{ end }}
+{{- end }}
+{{ end }}
