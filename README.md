@@ -57,6 +57,16 @@ A CLI for **AI-assisted repository maintenance**: PR descriptions, commit messag
 | **⚙️ Build & systems** | Cargo · vcpkg · Clang · CMake · Nix · Linux |
 | **☁️ Infrastructure** | GitHub Actions · GCP · Docker · Kubernetes · Proxmox · Tart · QEMU |
 
+<!-- ACTIVITY:pull-requests -->
+
+## 🔀 Recent pull requests
+
+- [\[build-pipeline\]: Added stdint.h import to mnn-sys build.rs for x86 macOS](https://github.com/aftershootco/mnn-rs/pull/25) on [aftershootco/mnn-rs](https://github.com/aftershootco/mnn-rs)
+
+<!-- /ACTIVITY:pull-requests -->
+
+<!-- ACTIVITY:stars -->
+
 ## ⭐ Recently starred
 
 A few things that caught my eye.
@@ -64,5 +74,7 @@ A few things that caught my eye.
 - [Kayleexx/sigil](https://github.com/Kayleexx/sigil) — sigil is a low level tool that runs a linux process in a private and restricted environment similar to docker
 - [ThePrimeagen/99](https://github.com/ThePrimeagen/99) — Neovim AI agent done right
 - [karpathy/autoresearch](https://github.com/karpathy/autoresearch) — AI agents running research on single-GPU nanochat training automatically
-- [ran-j/PS2Recomp](https://github.com/ran-j/PS2Recomp) — Playstation 2 Static Recompiler &amp; Runtime Tool to make native PC ports
+- [ran-j/PS2Recomp](https://github.com/ran-j/PS2Recomp) — Playstation 2 Static Recompiler & Runtime Tool to make native PC ports
 - [maxicarlos08/gphoto2-rs](https://github.com/maxicarlos08/gphoto2-rs) — Rust wrapper for gphoto2
+
+<!-- /ACTIVITY:stars -->

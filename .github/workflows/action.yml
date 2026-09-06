@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - README.gtpl
+      - .github/scripts/update_activity.py
       - .github/workflows/action.yml
   workflow_dispatch:
   schedule:
@@ -20,33 +20,19 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
 
-      - name: Check profile token
+      # Only public data is read, so the built-in token is sufficient.
+      # Do not reintroduce a personal access token here: classic tokens are
+      # rejected by orgs that forbid them, and fine-grained tokens cannot read
+      # the cross-repository pull request activity this profile shows.
+      - name: Update activity sections
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-        run: |
-          if [ -z "$GITHUB_TOKEN" ]; then
-            echo '::error::Add the GH_PAT repository secret for mohakco. See the comments in this workflow.'
-            exit 1
-          fi
-
-      - name: Set up Go
-        uses: actions/setup-go@v6
-        with:
-          go-version: '1.26.x'
-          cache: false
-
-      - name: Install markscribe
-        run: go install github.com/muesli/markscribe@v0.6.0
-
-      - name: Generate README
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-        run: markscribe -write README.md README.gtpl
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/update_activity.py
 
       - name: Commit README changes
         uses: stefanzweifel/git-auto-commit-action@v7
