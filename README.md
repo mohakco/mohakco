@@ -72,10 +72,10 @@ A CLI for **AI-assisted repository maintenance**: PR descriptions, commit messag
 
 A few things that caught my eye.
 
+- [tobi/disktree](https://github.com/tobi/disktree) — A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI.
 - [tokio-rs/async-stream](https://github.com/tokio-rs/async-stream) — Asynchronous streams for Rust using async & await notation
 - [affaan-m/ECC](https://github.com/affaan-m/ECC) — The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
 - [Kayleexx/sigil](https://github.com/Kayleexx/sigil) — sigil is a low level tool that runs a linux process in a private and restricted environment similar to docker
 - [ThePrimeagen/99](https://github.com/ThePrimeagen/99) — Neovim AI agent done right
-- [karpathy/autoresearch](https://github.com/karpathy/autoresearch) — AI agents running research on single-GPU nanochat training automatically
 
 <!-- /ACTIVITY:stars -->
