@@ -61,6 +61,7 @@ A CLI for **AI-assisted repository maintenance**: PR descriptions, commit messag
 
 ## 🔀 Recent pull requests
 
+- [SSRF agent POC based on IDS-Agent](https://github.com/blastre/ml-web-security-gateway/pull/2) on [blastre/ml-web-security-gateway](https://github.com/blastre/ml-web-security-gateway)
 - [Research POC: threat model through gateway and agent integration (Phases 1–5)](https://github.com/blastre/ml-web-security-gateway/pull/1) on [blastre/ml-web-security-gateway](https://github.com/blastre/ml-web-security-gateway)
 - [\[build-pipeline\]: Added stdint.h import to mnn-sys build.rs for x86 macOS](https://github.com/aftershootco/mnn-rs/pull/25) on [aftershootco/mnn-rs](https://github.com/aftershootco/mnn-rs)
 
